@@ -1,2 +1,7 @@
+created:
+    - database/factories/Models/TenantFactory.php
+    - database/migrations/2020_10_26_123250_create_tenants_table.php
+    - app/Models/Tenant.php
 models:
     Models\User: {  }
+    Models\Tenant: { uuid: 'uuid', cnpj: 'string unique', nome: 'string unique', url: string, email: 'string unique', telefone: 'string nullable', logo: 'string nullable', softdeletes: softDeletes, timestamps: timestamps }

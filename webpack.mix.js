@@ -11,9 +11,13 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix
+    .js('resources/js/app.js', 'public/js')
+    .js('node_modules/@fortawesome/fontawesome-free/js/all.js', 'public/js/fontawesome.js')
     .postCss('resources/css/app.css', 'public/css', [
         require('postcss-import'),
         require('tailwindcss'),
     ])
-    .webpackConfig(require('./webpack.config'));
+    .webpackConfig(require('./webpack.config'))
+    .sass('node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss', 'public/css')
+    ;

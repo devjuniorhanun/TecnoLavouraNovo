@@ -1,5 +1,12 @@
 models:
-  # ...
+  Models\Tenant:
+    uuid: uuid string
+    cnpj: string unique
+    nome: string unique
+    url: string
+    email: string unique
+    telefone: string nullable
+    logo: string nullable
+    softDeletes: true
+    timestamps: true
 
-controllers:
-  # ...

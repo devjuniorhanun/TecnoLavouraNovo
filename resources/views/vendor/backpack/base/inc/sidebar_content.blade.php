@@ -7,5 +7,7 @@
 	  <li class="nav-item"><a class="nav-link" href="{{ backpack_url('user') }}"><i class="nav-icon la la-user"></i> <span>Usuários</span></a></li>
 	  <li class="nav-item"><a class="nav-link" href="{{ backpack_url('role') }}"><i class="nav-icon la la-id-badge"></i> <span>Perfis</span></a></li>
 	  <li class="nav-item"><a class="nav-link" href="{{ backpack_url('permission') }}"><i class="nav-icon la la-key"></i> <span>Permições</span></a></li>
+	  <li class='nav-item'><a class='nav-link' href='{{ backpack_url('tenant') }}'><i class='nav-icon las la-house-damage'></i>Empresa</a></li>
 	</ul>
 </li>
+

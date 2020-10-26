@@ -12,6 +12,44 @@
 
 namespace App\Models{
 /**
+ * App\Models\Tenant
+ *
+ * @property int $id
+ * @property string $uuid
+ * @property string $cnpj
+ * @property string $nome
+ * @property string|null $url
+ * @property string $email
+ * @property string|null $telefone
+ * @property string|null $logo
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Spatie\Activitylog\Models\Activity[] $activities
+ * @property-read int|null $activities_count
+ * @method static \Illuminate\Database\Eloquent\Builder|Tenant newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Tenant newQuery()
+ * @method static \Illuminate\Database\Query\Builder|Tenant onlyTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder|Tenant query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Tenant whereCnpj($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Tenant whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Tenant whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Tenant whereEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Tenant whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Tenant whereLogo($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Tenant whereNome($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Tenant whereTelefone($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Tenant whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Tenant whereUrl($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Tenant whereUuid($value)
+ * @method static \Illuminate\Database\Query\Builder|Tenant withTrashed()
+ * @method static \Illuminate\Database\Query\Builder|Tenant withoutTrashed()
+ */
+	class Tenant extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
  * App\Models\User
  *
  * @property int $id
